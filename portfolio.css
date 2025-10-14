@@ -54,6 +54,10 @@ nav{
 .fa-bars{
     display: none;
 }
+.menu-list li .active-link{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
 /* media query */
 @media (max-width: 1114px){
     .logo{
@@ -145,14 +149,13 @@ nav{
     animation-name: scroll;
     animation-iteration-count: infinite;
     animation-duration: 3s;
-    animation-delay: 2s;
 }
 @keyframes scroll{
     0%{
         transform: translateY(-29px);
     }
     50%{
-        transform-origin: 0;
+        transform: translateY(0);
     }
     100%{
         transform: translateY(29px);
@@ -739,7 +742,7 @@ nav{
     padding-top: 1em;
     justify-self: center;
     display: block;
-    padding-bottom: 4em;
+    padding-bottom: 3em;
 }
 #message{
     background-color: #030e6c;
@@ -759,20 +762,10 @@ textarea{
     color: #a0c7ee;
     opacity: 1;
 }
-.forr a{
-    text-align: center;
+.forr .btn{
+    cursor: pointer;
     display: block;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: blue;
-    color: white;
-    width: 200px;
     margin: auto;
-    font-family: 'BR Shape', sans-serif;
-}
-.forr a:hover{
-    background-color: rgb(15, 15, 232);
-    transition: all .5s;
 }
 .lin{
     display: flex;
@@ -801,12 +794,12 @@ textarea{
         width: 370px;
         height: 200px;
     }
-    .forr a{
+    .forr .btn{
         text-align: center;
         display: block;
-        width: 370px;
+        width: 320px;
         margin: auto;
-}
+    }
 }
 @media(max-width: 470px){
     .lin{
