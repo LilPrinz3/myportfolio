@@ -22,8 +22,9 @@ header{
     position: fixed;
     width: 100%;
     /* background-color: aqua; */
+    /* background-color: transparent; */
     z-index: 2;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(10px);
 }
 nav{
     display: flex;
