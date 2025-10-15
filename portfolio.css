@@ -801,12 +801,15 @@ textarea{
         margin: auto;
     }
 }
+/* @media(max-width: 470px){
+    .lin{
+        gap: 7em;
+    }
+} */
 @media(max-width: 470px){
     .lin{
         gap: 7em;
     }
-}
-@media(max-width: 390px){
     .fill .inp{
      width: 300px;   
     }
